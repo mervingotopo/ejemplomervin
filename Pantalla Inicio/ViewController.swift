@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var information: UILabel!
+
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func name(sender: AnyObject) {
+        information.text = "Mervin"
+    }
+    @IBAction func apellido(sender: AnyObject) {
+        information.text = "Gotopo"
+    }
 
+    @IBAction func ciudad(sender: AnyObject) {
+        information.text = "Maracaibo"
+    }
+    @IBAction func pais(sender: AnyObject) {
+        information.text = "Venezuela"
+    }
+    // comentary
 }
 
